@@ -28,7 +28,7 @@ commit and build date under `worldedit.fork.commit` / `worldedit.fork.build.date
 repositories {
     maven {
         name = 'DollanWorldEdit'
-        url = 'https://dollanith.github.io/worldedit-maven/'
+        url = 'https://jhxiaochen.github.io/my-maven/'
     }
 }
 

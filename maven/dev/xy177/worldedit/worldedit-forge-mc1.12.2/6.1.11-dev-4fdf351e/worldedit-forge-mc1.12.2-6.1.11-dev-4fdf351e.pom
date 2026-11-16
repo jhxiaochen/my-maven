@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>dev.xy177.worldedit</groupId>
+  <artifactId>worldedit-forge-mc1.12.2</artifactId>
+  <version>6.1.11-dev-4fdf351e</version>
+  <packaging>jar</packaging>
+
+  <name>WorldEdit Forge 1.12.2 (height-extended fork, 4fdf351e)</name>
+  <description>WorldEdit 6.1.11 Forge platform module rebuilt from the height-extended fork at commit 4fdf351e on 2026-11-16T21:29:59+08:00. Compile-time only; Forge classes come from the mod loader at runtime.</description>
+  <url>https://github.com/DollanITH/WorldEdit</url>
+
+  <licenses>
+    <license>
+      <name>GNU General Public License v3.0 (WorldEdit as a whole)</name>
+      <url>https://www.gnu.org/licenses/gpl-3.0.html</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>DollanITH</id>
+      <name>DollanITH fork maintainer</name>
+      <url>https://github.com/DollanITH/WorldEdit</url>
+    </developer>
+  </developers>
+
+  <properties>
+    <worldedit.fork.commit>4fdf351e</worldedit.fork.commit>
+    <worldedit.fork.build.date>2026-11-16T21:29:59+08:00</worldedit.fork.build.date>
+    <worldedit.upstream.source>https://github.com/EngineHub/WorldEdit</worldedit.upstream.source>
+  </properties>
+</project>

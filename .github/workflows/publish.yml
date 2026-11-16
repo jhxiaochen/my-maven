@@ -1,0 +1,28 @@
+name: Publish WorldEdit Maven
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master, main ]
+    paths:
+      - 'maven/**'
+      - '.github/workflows/publish.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Publish artifact to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./maven
+          publish_branch: gh-pages
+          keep_files: false
+          commit_message: 'deploy: ${{ github.sha }}'
